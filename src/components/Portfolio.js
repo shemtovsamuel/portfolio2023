@@ -134,10 +134,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <img src="static/img/portfolio/rtype.png" title="" alt="" />
                   <div className="portfolio-icon">
-                    <a
-                      href="static/img/m-portfolio-3.jpg"
-                      className="gallery-link"
-                    >
+                    <a href="/rtype" className="gallery-link">
                       <span className="ti-plus" />
                     </a>
                   </div>
@@ -158,10 +155,7 @@ const Portfolio = () => {
                 <div className="portfolio-img">
                   <img src="static/img/portfolio/tree.png" title="" alt="" />
                   <div className="portfolio-icon">
-                    <a
-                      href="static/img/m-portfolio-3.jpg"
-                      className="gallery-link"
-                    >
+                    <a href="/tree" className="gallery-link">
                       <span className="ti-plus" />
                     </a>
                   </div>

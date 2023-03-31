@@ -34,11 +34,11 @@ const SingleBlog = () => {
                     Pour plus d'informations, consultez le dépôt GitHub du
                     projet :{" "}
                     <a
-                      href="https://github.com/shemtovsamuel/Area.git"
+                      href="https://github.com/shemtovsamuel/tree"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      https://github.com/shemtovsamuel/Area.git
+                      https://github.com/shemtovsamuel/tree
                     </a>
                   </p>
                   <h4>Technologies utilisées</h4>
