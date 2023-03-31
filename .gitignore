@@ -1,0 +1,36 @@
+# .gitignore
+
+# Fichiers de configuration de l'éditeur de texte
+.vscode/
+.idea/
+
+# Fichiers de cache
+.cache/
+.next/
+node_modules/
+
+# Fichiers de build
+out/
+dist/
+
+# Fichiers de journalisation
+*.log
+
+# Fichiers et dossiers liés au système d'exploitation
+.DS_Store
+Thumbs.db
+__MACOSX/
+
+# Fichiers temporaires
+*.tmp
+*.swp
+*.swo
+
+# Fichiers de sauvegarde
+*~
+*.bak
+
+# Fichiers générés automatiquement
+/public/static/css/
+/public/static/js/
+/public/static/media/
