@@ -35,6 +35,18 @@ const SingleBlog = () => {
                     permettent de se connecter à l'application depuis un
                     navigateur ou un téléphone.
                   </p>
+                  <h4>Lien du projet GitHub</h4>
+                  <p>
+                    Pour plus d'informations, consultez le dépôt GitHub du
+                    projet :{" "}
+                    <a
+                      href="https://github.com/shemtovsamuel/Area.git"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      https://github.com/shemtovsamuel/Area.git
+                    </a>
+                  </p>
                   <h4>Technologies utilisées</h4>
                   <p>
                     Front End :

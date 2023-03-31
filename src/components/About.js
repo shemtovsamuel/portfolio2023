@@ -37,9 +37,12 @@ const About = () => {
           <div className="col-lg-6 m-15px-tb">
             <div className="about-me">
               <div className="img">
-                <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
-                </div>
+                <img
+                  src="static/img/about-me.png"
+                  style={{ width: "100%" }}
+                  title=""
+                  alt=""
+                />
               </div>
             </div>
           </div>
