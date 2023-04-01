@@ -42,16 +42,116 @@ import React, { useState } from "react";
 import ExperienceRow from "./ExperienceRow";
 
 const About = () => {
+  const listIcon = [
+    {
+      name: "Angular",
+      icon: <AngularDark />,
+      iconLight: <AngularLight />,
+    },
+    {
+      name: "AWS",
+      icon: <AwsDark />,
+      iconLight: <AwsLight />,
+    },
+    {
+      name: "C",
+      icon: <CDark />,
+      iconLight: <CLight />,
+    },
+    {
+      name: "C++",
+      icon: <CppDark />,
+      iconLight: <CppLight />,
+    },
+    {
+      name: "CSS",
+      icon: <CssDark />,
+      iconLight: <CssLight />,
+    },
+    {
+      name: "Dart",
+      icon: <DartDark />,
+      iconLight: <DartLight />,
+    },
+    {
+      name: "Digital Ocean",
+      icon: <DigitalOceanDark />,
+      iconLight: <DigitalOceanLight />,
+    },
+    {
+      name: "Docker",
+      icon: <DockerDark />,
+      iconLight: <DockerLight />,
+    },
+    {
+      name: "Flutter",
+      icon: <FlutterDark />,
+      iconLight: <FlutterLight />,
+    },
+    {
+      name: "Github",
+      icon: <GithubDark />,
+      iconLight: <GithubLight />,
+    },
+    {
+      name: "Gitlab",
+      icon: <GitlabDark />,
+      iconLight: <GitlabLight />,
+    },
+    {
+      name: "HTML",
+      icon: <HtmlDark />,
+      iconLight: <HtmlLight />,
+    },
+    {
+      name: "Javascript",
+      icon: <JavascriptDark />,
+      iconLight: <JavascriptLight />,
+    },
+    {
+      name: "MySQL",
+      icon: <MysqlDark />,
+      iconLight: <MysqlLight />,
+    },
+    {
+      name: "PostgreSQL",
+      icon: <PostgreDark />,
+      iconLight: <PostgreLight />,
+    },
+    {
+      name: "Python",
+      icon: <PythonDark />,
+      iconLight: <PythonLight />,
+    },
+
+    {
+      name: "React",
+      icon: <ReactDark />,
+      iconLight: <ReactLight />,
+    },
+    {
+      name: "Spring",
+      icon: <SpringDark />,
+
+      iconLight: <SpringLight />,
+    },
+    {
+      name: "Typescript",
+      icon: <TypescriptDark />,
+      iconLight: <TypescriptLight />,
+    },
+  ];
+
   const [experienceBackgroundColor, setExperienceBackgroundColor] =
     useState("");
 
-  const changeBackgroundColor = (color) => {
-    setExperienceBackgroundColor(color);
-  };
+  // const changeBackgroundColor = (color) => {
+  //   setExperienceBackgroundColor(color);
+  // };
 
-  const resetBackgroundColor = () => {
-    setExperienceBackgroundColor("");
-  };
+  // const resetBackgroundColor = () => {
+  //   setExperienceBackgroundColor("");
+  // };
 
   return (
     <section
@@ -146,7 +246,7 @@ const About = () => {
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
-            <div className="skills-box">
+            <div className="skills-box toto">
               <h3>Mes compétences</h3>
               <p>
                 Mon expérience en entreprise et mon parcours à Epitech m'ont
@@ -156,122 +256,16 @@ const About = () => {
               </p>
             </div>
             <div className="list-icon">
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <AngularDark alt="Python" title="Python" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <AwsDark alt="AwsDark" title="AwsDark" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CDark alt="C" title="C" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CppDark alt="Cpp" title="Cpp" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CssDark alt="Css" title="Css" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DartDark alt="Dart" title="Dart" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DigitalOceanDark alt="DigitalOcean" title="DigitalOcean" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DockerDark alt="Docker" title="Docker" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <FlutterDark alt="Flutter" title="Flutter" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <GithubDark alt="Github" title="Github" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <GitlabDark alt="Gitlab" title="Gitlab" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <HtmlDark alt="Html" title="Html" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <JavascriptDark alt="Javascript" title="Javascript" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <MysqlDark alt="Mysql" title="Mysql" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <PostgreDark alt="Postgre" title="Postgre" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <PythonDark alt="Python" title="Python" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <ReactDark alt="React" title="React" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <SpringDark alt="Spring" title="Spring" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <TypescriptDark alt="Typescript" title="Typescript" />
-              </svg>
-            </div>
-            <div className="list-icon">
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <AngularLight alt="Python" title="Python" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <AwsLight alt="AwsLight" title="AwsLight" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CLight alt="C" title="C" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CppLight alt="Cpp" title="Cpp" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <CssLight alt="Css" title="Css" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DartLight alt="Dart" title="Dart" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DigitalOceanLight alt="DigitalOcean" title="DigitalOcean" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <DockerLight alt="Docker" title="Docker" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <FlutterLight alt="Flutter" title="Flutter" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <GithubLight alt="Github" title="Github" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <GitlabLight alt="Gitlab" title="Gitlab" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <HtmlLight alt="Html" title="Html" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <JavascriptLight alt="Javascript" title="Javascript" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <MysqlLight alt="Mysql" title="Mysql" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <PostgreLight alt="Postgre" title="Postgre" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <PythonLight alt="Python" title="Python" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <ReactLight alt="React" title="React" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <SpringLight alt="Spring" title="Spring" />
-              </svg>
-              <svg className="language-icon" viewBox="0 0 512 512">
-                <TypescriptLight alt="Typescript" title="Typescript" />
-              </svg>
+              {listIcon.map((iconObj) => (
+                <svg
+                  className="language-icon"
+                  viewBox="0 0 512 512"
+                  key={iconObj.name}
+                >
+                  {/* {iconObj.icon} */}
+                  {iconObj.iconLight}
+                </svg>
+              ))}
             </div>
           </div>
         </div>
