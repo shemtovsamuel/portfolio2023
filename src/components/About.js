@@ -38,6 +38,8 @@ import { ReactComponent as ReactLight } from "../../public/assets/Light/react.sv
 import { ReactComponent as SpringLight } from "../../public/assets/Light/spring.svg";
 import { ReactComponent as TypescriptLight } from "../../public/assets/Light/typescript.svg";
 
+import DayNightMood from "../layout/DayNightMood";
+
 import React, { useState } from "react";
 import ExperienceRow from "./ExperienceRow";
 
@@ -145,14 +147,6 @@ const About = () => {
   const [experienceBackgroundColor, setExperienceBackgroundColor] =
     useState("");
 
-  // const changeBackgroundColor = (color) => {
-  //   setExperienceBackgroundColor(color);
-  // };
-
-  // const resetBackgroundColor = () => {
-  //   setExperienceBackgroundColor("");
-  // };
-
   return (
     <section
       id="about"
@@ -246,7 +240,7 @@ const About = () => {
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
-            <div className="skills-box toto">
+            <div className="skills-box">
               <h3>Mes compétences</h3>
               <p>
                 Mon expérience en entreprise et mon parcours à Epitech m'ont
@@ -262,8 +256,8 @@ const About = () => {
                   viewBox="0 0 512 512"
                   key={iconObj.name}
                 >
-                  {/* {iconObj.icon} */}
-                  {iconObj.iconLight}
+                  {iconObj.icon} if Day mode is on
+                  {/* {iconObj.iconLight} if Night mode is on */}
                 </svg>
               ))}
             </div>
