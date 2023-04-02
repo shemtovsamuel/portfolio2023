@@ -3,6 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
+import Layout from "../src/layout/Layout"; // Importez le fichier Layout
 
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
@@ -19,7 +20,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
       </Head>
       {load && <PreLoader />}
-      <Component {...pageProps} />
+      <Layout>
+        {" "}
+        {/* Utilisez le composant Layout pour englober le Component */}
+        <Component {...pageProps} />
+      </Layout>
     </Fragment>
   );
 }
