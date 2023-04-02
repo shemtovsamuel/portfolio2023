@@ -59,6 +59,7 @@ import { ReactComponent as SpringBlue } from "../../public/assets/Blue/spring.sv
 import { ReactComponent as TypescriptBlue } from "../../public/assets/Blue/typescript.svg";
 
 import ThemeContext from "./ThemeContext";
+import LanguageContext from "./LanguageContext";
 
 import React, { useState, useContext } from "react";
 import ExperienceRow from "./ExperienceRow";
@@ -183,12 +184,12 @@ const About = () => {
     },
   ];
 
-  const [experienceBackgroundColor, setExperienceBackgroundColor] =
-    useState("");
-
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const { night } = useContext(ThemeContext);
+  const { language } = useContext(LanguageContext);
+  console.log("language: ", language);
+
   return (
     <section
       id="about"
