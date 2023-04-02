@@ -66,18 +66,6 @@ import ExperienceRow from "./ExperienceRow";
 const About = () => {
   const listIcon = [
     {
-      name: "Angular",
-      icon: <AngularDark />,
-      iconLight: <AngularLight />,
-      iconBlue: <AngularBlue />,
-    },
-    {
-      name: "AWS",
-      icon: <AwsDark />,
-      iconLight: <AwsLight />,
-      iconBlue: <AwsBlue />,
-    },
-    {
       name: "C",
       icon: <CDark />,
       iconLight: <CLight />,
@@ -90,52 +78,16 @@ const About = () => {
       iconBlue: <CppBlue />,
     },
     {
-      name: "CSS",
-      icon: <CssDark />,
-      iconLight: <CssLight />,
-      iconBlue: <CssBlue />,
-    },
-    {
       name: "Dart",
       icon: <DartDark />,
       iconLight: <DartLight />,
       iconBlue: <DartBlue />,
     },
     {
-      name: "Digital Ocean",
-      icon: <DigitalOceanDark />,
-      iconLight: <DigitalOceanLight />,
-      iconBlue: <DigitalOceanBlue />,
-    },
-    {
-      name: "Docker",
-      icon: <DockerDark />,
-      iconLight: <DockerLight />,
-      iconBlue: <DockerBlue />,
-    },
-    {
-      name: "Flutter",
-      icon: <FlutterDark />,
-      iconLight: <FlutterLight />,
-      iconBlue: <FlutterBlue />,
-    },
-    {
-      name: "Github",
-      icon: <GithubDark />,
-      iconLight: <GithubLight />,
-      iconBlue: <GithubBlue />,
-    },
-    {
-      name: "Gitlab",
-      icon: <GitlabDark />,
-      iconLight: <GitlabLight />,
-      iconBlue: <GitlabBlue />,
-    },
-    {
-      name: "HTML",
-      icon: <HtmlDark />,
-      iconLight: <HtmlLight />,
-      iconBlue: <HtmlBlue />,
+      name: "Python",
+      icon: <PythonDark />,
+      iconLight: <PythonLight />,
+      iconBlue: <PythonBlue />,
     },
     {
       name: "Javascript",
@@ -144,24 +96,43 @@ const About = () => {
       iconBlue: <JavascriptBlue />,
     },
     {
+      name: "Typescript",
+      icon: <TypescriptDark />,
+      iconLight: <TypescriptLight />,
+      iconBlue: <TypescriptBlue />,
+    },
+
+    {
       name: "MySQL",
       icon: <MysqlDark />,
       iconLight: <MysqlLight />,
       iconBlue: <MysqlBlue />,
     },
     {
-      name: "PostgreSQL",
-      icon: <PostgreDark />,
-      iconLight: <PostgreLight />,
-      iconBlue: <PostgreBlue />,
+      name: "HTML",
+      icon: <HtmlDark />,
+      iconLight: <HtmlLight />,
+      iconBlue: <HtmlBlue />,
     },
     {
-      name: "Python",
-      icon: <PythonDark />,
-      iconLight: <PythonLight />,
-      iconBlue: <PythonBlue />,
+      name: "CSS",
+      icon: <CssDark />,
+      iconLight: <CssLight />,
+      iconBlue: <CssBlue />,
     },
 
+    {
+      name: "Flutter",
+      icon: <FlutterDark />,
+      iconLight: <FlutterLight />,
+      iconBlue: <FlutterBlue />,
+    },
+    {
+      name: "Angular",
+      icon: <AngularDark />,
+      iconLight: <AngularLight />,
+      iconBlue: <AngularBlue />,
+    },
     {
       name: "React",
       icon: <ReactDark />,
@@ -175,10 +146,40 @@ const About = () => {
       iconBlue: <SpringBlue />,
     },
     {
-      name: "Typescript",
-      icon: <TypescriptDark />,
-      iconLight: <TypescriptLight />,
-      iconBlue: <TypescriptBlue />,
+      name: "PostgreSQL",
+      icon: <PostgreDark />,
+      iconLight: <PostgreLight />,
+      iconBlue: <PostgreBlue />,
+    },
+    {
+      name: "Docker",
+      icon: <DockerDark />,
+      iconLight: <DockerLight />,
+      iconBlue: <DockerBlue />,
+    },
+    {
+      name: "AWS",
+      icon: <AwsDark />,
+      iconLight: <AwsLight />,
+      iconBlue: <AwsBlue />,
+    },
+    {
+      name: "Digital Ocean",
+      icon: <DigitalOceanDark />,
+      iconLight: <DigitalOceanLight />,
+      iconBlue: <DigitalOceanBlue />,
+    },
+    {
+      name: "Github",
+      icon: <GithubDark />,
+      iconLight: <GithubLight />,
+      iconBlue: <GithubBlue />,
+    },
+    {
+      name: "Gitlab",
+      icon: <GitlabDark />,
+      iconLight: <GitlabLight />,
+      iconBlue: <GitlabBlue />,
     },
   ];
 
@@ -290,22 +291,6 @@ const About = () => {
                 travail.
               </p>
             </div>
-            {/* <div className="list-icon">
-              {listIcon.map((iconObj) => (
-                <svg
-                  className="language-icon"
-                  viewBox="0 0 512 512"
-                  key={iconObj.name}
-                  onMouseEnter={() => setHoveredIcon(iconObj.name)}
-                  onMouseLeave={() => setHoveredIcon(null)}
-                >
-                  {(night && hoveredIcon !== iconObj.name) ||
-                  (!night && hoveredIcon === iconObj.name)
-                    ? iconObj.iconLight
-                    : iconObj.icon}
-                </svg>
-              ))}
-            </div> */}
             <div className="list-icon">
               {listIcon.map((iconObj) => (
                 <svg
