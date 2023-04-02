@@ -38,6 +38,26 @@ import { ReactComponent as ReactLight } from "../../public/assets/Light/react.sv
 import { ReactComponent as SpringLight } from "../../public/assets/Light/spring.svg";
 import { ReactComponent as TypescriptLight } from "../../public/assets/Light/typescript.svg";
 
+import { ReactComponent as AngularBlue } from "../../public/assets/Blue/angular.svg";
+import { ReactComponent as AwsBlue } from "../../public/assets/Blue/aws.svg";
+import { ReactComponent as CBlue } from "../../public/assets/Blue/c.svg";
+import { ReactComponent as CppBlue } from "../../public/assets/Blue/cpp.svg";
+import { ReactComponent as CssBlue } from "../../public/assets/Blue/css.svg";
+import { ReactComponent as DartBlue } from "../../public/assets/Blue/dart.svg";
+import { ReactComponent as DigitalOceanBlue } from "../../public/assets/Blue/digitalOcean.svg";
+import { ReactComponent as DockerBlue } from "../../public/assets/Blue/docker.svg";
+import { ReactComponent as FlutterBlue } from "../../public/assets/Blue/flutter.svg";
+import { ReactComponent as GithubBlue } from "../../public/assets/Blue/github.svg";
+import { ReactComponent as GitlabBlue } from "../../public/assets/Blue/gitlab.svg";
+import { ReactComponent as HtmlBlue } from "../../public/assets/Blue/html.svg";
+import { ReactComponent as JavascriptBlue } from "../../public/assets/Blue/javascript.svg";
+import { ReactComponent as MysqlBlue } from "../../public/assets/Blue/mysql.svg";
+import { ReactComponent as PostgreBlue } from "../../public/assets/Blue/postgre.svg";
+import { ReactComponent as PythonBlue } from "../../public/assets/Blue/python.svg";
+import { ReactComponent as ReactBlue } from "../../public/assets/Blue/react.svg";
+import { ReactComponent as SpringBlue } from "../../public/assets/Blue/spring.svg";
+import { ReactComponent as TypescriptBlue } from "../../public/assets/Blue/typescript.svg";
+
 import ThemeContext from "./ThemeContext";
 
 import React, { useState, useContext } from "react";
@@ -49,103 +69,123 @@ const About = () => {
       name: "Angular",
       icon: <AngularDark />,
       iconLight: <AngularLight />,
+      iconBlue: <AngularBlue />,
     },
     {
       name: "AWS",
       icon: <AwsDark />,
       iconLight: <AwsLight />,
+      iconBlue: <AwsBlue />,
     },
     {
       name: "C",
       icon: <CDark />,
       iconLight: <CLight />,
+      iconBlue: <CBlue />,
     },
     {
       name: "C++",
       icon: <CppDark />,
       iconLight: <CppLight />,
+      iconBlue: <CppBlue />,
     },
     {
       name: "CSS",
       icon: <CssDark />,
       iconLight: <CssLight />,
+      iconBlue: <CssBlue />,
     },
     {
       name: "Dart",
       icon: <DartDark />,
       iconLight: <DartLight />,
+      iconBlue: <DartBlue />,
     },
     {
       name: "Digital Ocean",
       icon: <DigitalOceanDark />,
       iconLight: <DigitalOceanLight />,
+      iconBlue: <DigitalOceanBlue />,
     },
     {
       name: "Docker",
       icon: <DockerDark />,
       iconLight: <DockerLight />,
+      iconBlue: <DockerBlue />,
     },
     {
       name: "Flutter",
       icon: <FlutterDark />,
       iconLight: <FlutterLight />,
+      iconBlue: <FlutterBlue />,
     },
     {
       name: "Github",
       icon: <GithubDark />,
       iconLight: <GithubLight />,
+      iconBlue: <GithubBlue />,
     },
     {
       name: "Gitlab",
       icon: <GitlabDark />,
       iconLight: <GitlabLight />,
+      iconBlue: <GitlabBlue />,
     },
     {
       name: "HTML",
       icon: <HtmlDark />,
       iconLight: <HtmlLight />,
+      iconBlue: <HtmlBlue />,
     },
     {
       name: "Javascript",
       icon: <JavascriptDark />,
       iconLight: <JavascriptLight />,
+      iconBlue: <JavascriptBlue />,
     },
     {
       name: "MySQL",
       icon: <MysqlDark />,
       iconLight: <MysqlLight />,
+      iconBlue: <MysqlBlue />,
     },
     {
       name: "PostgreSQL",
       icon: <PostgreDark />,
       iconLight: <PostgreLight />,
+      iconBlue: <PostgreBlue />,
     },
     {
       name: "Python",
       icon: <PythonDark />,
       iconLight: <PythonLight />,
+      iconBlue: <PythonBlue />,
     },
 
     {
       name: "React",
       icon: <ReactDark />,
       iconLight: <ReactLight />,
+      iconBlue: <ReactBlue />,
     },
     {
       name: "Spring",
       icon: <SpringDark />,
-
       iconLight: <SpringLight />,
+      iconBlue: <SpringBlue />,
     },
     {
       name: "Typescript",
       icon: <TypescriptDark />,
       iconLight: <TypescriptLight />,
+      iconBlue: <TypescriptBlue />,
     },
   ];
 
   const [experienceBackgroundColor, setExperienceBackgroundColor] =
     useState("");
+
+  const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const { night } = useContext(ThemeContext);
   return (
@@ -250,14 +290,36 @@ const About = () => {
                 travail.
               </p>
             </div>
+            {/* <div className="list-icon">
+              {listIcon.map((iconObj) => (
+                <svg
+                  className="language-icon"
+                  viewBox="0 0 512 512"
+                  key={iconObj.name}
+                  onMouseEnter={() => setHoveredIcon(iconObj.name)}
+                  onMouseLeave={() => setHoveredIcon(null)}
+                >
+                  {(night && hoveredIcon !== iconObj.name) ||
+                  (!night && hoveredIcon === iconObj.name)
+                    ? iconObj.iconLight
+                    : iconObj.icon}
+                </svg>
+              ))}
+            </div> */}
             <div className="list-icon">
               {listIcon.map((iconObj) => (
                 <svg
                   className="language-icon"
                   viewBox="0 0 512 512"
                   key={iconObj.name}
+                  onMouseEnter={() => setHoveredIcon(iconObj.name)}
+                  onMouseLeave={() => setHoveredIcon(null)}
                 >
-                  {night ? iconObj.iconLight : iconObj.icon}
+                  {hoveredIcon === iconObj.name
+                    ? iconObj.iconBlue
+                    : night
+                    ? iconObj.iconLight
+                    : iconObj.icon}
                 </svg>
               ))}
             </div>
