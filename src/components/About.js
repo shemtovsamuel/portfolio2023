@@ -38,9 +38,9 @@ import { ReactComponent as ReactLight } from "../../public/assets/Light/react.sv
 import { ReactComponent as SpringLight } from "../../public/assets/Light/spring.svg";
 import { ReactComponent as TypescriptLight } from "../../public/assets/Light/typescript.svg";
 
-import DayNightMood from "../layout/DayNightMood";
+import ThemeContext from "./ThemeContext";
 
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import ExperienceRow from "./ExperienceRow";
 
 const About = () => {
@@ -147,6 +147,7 @@ const About = () => {
   const [experienceBackgroundColor, setExperienceBackgroundColor] =
     useState("");
 
+  const { night } = useContext(ThemeContext);
   return (
     <section
       id="about"
@@ -256,8 +257,7 @@ const About = () => {
                   viewBox="0 0 512 512"
                   key={iconObj.name}
                 >
-                  {iconObj.icon} if Day mode is on
-                  {/* {iconObj.iconLight} if Night mode is on */}
+                  {night ? iconObj.iconLight : iconObj.icon}
                 </svg>
               ))}
             </div>
