@@ -60,6 +60,7 @@ import { ReactComponent as TypescriptBlue } from "../../public/assets/Blue/types
 
 import ThemeContext from "./ThemeContext";
 import LanguageContext from "./LanguageContext";
+import { translations } from "./translationsData";
 
 import React, { useState, useContext } from "react";
 import ExperienceRow from "./ExperienceRow";
@@ -188,7 +189,6 @@ const About = () => {
 
   const { night } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
-  console.log("language: ", language);
 
   return (
     <section
@@ -213,26 +213,18 @@ const About = () => {
           <div className="col-lg-6 m-15px-tb">
             <div className="about-info">
               <div className="title">
-                <h3>À propos de moi</h3>
+                <h3> {translations[language].aboutTitle}</h3>
               </div>
               <div className="about-text">
-                <h3>Développeur en troisième année à Epitech 🚀</h3>
-                <p>
-                  Mon objectif en tant que développeur est de créer des
-                  solutions innovantes qui résolvent des problèmes et améliorent
-                  l'expérience utilisateur. Je suis constamment à la recherche
-                  de nouvelles technologies et de nouvelles approches pour
-                  améliorer mes compétences en programmation et fournir des
-                  résultats de haute qualité pour mes clients et mes
-                  utilisateurs.
-                </p>
+                <h3>{translations[language].aboutSubTitle}</h3>
+                <p>{translations[language].aboutDescription}</p>
                 <div className="row">
                   <div className="col-auto">
                     <div className="media align-items-center">
                       <span className="count">52</span>
                       <div className="media-body">
-                        Projets <br />
-                        réalisés
+                        {translations[language].aboutInfo1} <br />
+                        {translations[language].aboutInfo2}
                       </div>
                     </div>
                   </div>
@@ -240,16 +232,15 @@ const About = () => {
                     <div className="media align-items-center">
                       <span className="count">+4</span>
                       <div className="media-body">
-                        Années d'expérience
-                        <br />
-                        en programmation
+                        {translations[language].aboutInfo3} <br />
+                        {translations[language].aboutInfo4}
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="btn-bar">
                   <a className="px-btn px-btn-theme" href="#">
-                    <span>Me contacter</span>
+                    <span>{translations[language].buttonContact}</span>
                   </a>
                   <a className="px-btn px-btn-theme" href="#">
                     <span>Portfolio</span>
@@ -261,7 +252,7 @@ const About = () => {
         </div>
         <div className="separated" />
         <div className="title">
-          <h3>ÉDUCATION &amp; COMPÉTENCES</h3>
+          <h3>{translations[language].titleEducation}</h3>
         </div>
         <div className="row">
           <div className="col-lg-4 m-15px-tb">
@@ -269,28 +260,21 @@ const About = () => {
               <li>
                 <span>2020-2025</span>
                 <h6>EPITECH</h6>
-                <p>Expert en technonologies de l’information</p>
-                <p>
-                  Compétences acquises : <b>autonomie / travail d’équipe</b>
-                </p>
+                <p>{translations[language].titleEpitech}</p>
+                <p>{translations[language].epitechcompetencies}</p>
               </li>
               <li>
                 <span>2020</span>
                 <h6>NOTRE DAME DES MISSIONS</h6>
-                <p>Baccalauréat scientifique</p>
-                <p>Mention: Bien</p>
+                <p>{translations[language].bac}</p>
+                <p>{translations[language].bacMention}</p>
               </li>
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
-              <h3>Mes compétences</h3>
-              <p>
-                Mon expérience en entreprise et mon parcours à Epitech m'ont
-                doté d'une connaissance approfondie en programmation. Je suis un
-                développeur créatif, curieux et soucieux de la qualité de mon
-                travail.
-              </p>
+              <h3>{translations[language].skillsTitle}</h3>
+              <p>{translations[language].skillsDescription}</p>
             </div>
             <div className="list-icon">
               {listIcon.map((iconObj) => (
@@ -318,45 +302,31 @@ const About = () => {
         <div className="resume-box">
           <ExperienceRow
             logoSrc="static/img/one-point-logo.png"
-            title="Développeur mobiles"
+            title={translations[language].devMobile}
             label="One point | avril 2022 - Present"
-            time="Stage"
+            time={translations[language].internship}
             description="One Point est une entreprise qui propose des solutions de conseil, de développement et d'accompagnement pour aider les entreprises à se transformer grâce au digital. Elle accompagne ses clients dans leur transformation digitale à travers une large gamme de services allant de la conception de solutions sur-mesure à l'accompagnement de projets de grande envergure."
           />
           <ExperienceRow
             logoSrc="static/img/one-point-logo.png"
-            title="Développeur mobiles"
-            label="One point | octobre 2022 - avril 2023"
+            title={translations[language].devMobile}
+            label={translations[language].datePartTimeOP}
             time="Stage à temps partiel"
             description="One Point est une entreprise qui propose des solutions de conseil, de développement et d'accompagnement pour aider les entreprises à se transformer grâce au digital. Elle accompagne ses clients dans leur transformation digitale à travers une large gamme de services allant de la conception de solutions sur-mesure à l'accompagnement de projets de grande envergure."
           />
           <ExperienceRow
             logoSrc="static/img/taker-logo.png"
-            title="Chef de projet"
-            label="Taker | mars 2022 - avril 2023"
+            title={translations[language].chefDeProjet}
+            label={translations[language].dateTaker}
             time="Association"
-            description="• Prospection : recherche de nouveaux clients (start-up,
-              grands comptes...), prise de contact <br />• Gestion de
-              projet : planification, organisation, méthodes agiles,
-              établissement de budgets <br />• Communication :
-              communication avec les clients, travail en équipe <br />•
-              Compétences techniques : maîtrise de plusieurs langages de
-              programmation <br />• Leadership : prise de décision,
-              résolution de problèmes, coordination de l'équipe de travail"
+            description={translations[language].descriptionTaker}
           />
           <ExperienceRow
             logoSrc="static/img/rtl-ad-connect-logo.png"
-            title="Développeur Full Stack"
-            label="RTL AdConnect | juillet 2021 - decembre 2021"
-            time="Stage"
-            description="Durant mon stage, j'ai développé un dashboard de gestion des
-            collaborateurs permettant aux services RH et généraux de
-            gérer les utilisateurs de l'entreprise de manière efficace
-            et ergonomique. L'application a été reliée à l'Active
-            Directory pour récupérer et stocker les informations des
-            utilisateurs dans une base de données, afin de fournir une
-            vue complète et centralisée de tous les collaborateurs de
-            l'entreprise."
+            title={translations[language].devFullStack}
+            label={translations[language].dateRTL}
+            time={translations[language].internship}
+            description={translations[language].RTLDescription}
           />
         </div>
       </div>
