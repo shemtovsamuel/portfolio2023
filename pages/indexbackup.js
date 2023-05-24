@@ -19,7 +19,7 @@ const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
 
 const Layout = ({ children, blog }) => {
     const [night, setNight] = useState(true);
-    const [language, setLanguage] = useState("en"); // Ajouter cette ligne pour définir l'état de la langue
+    const [language, setLanguage] = useState("en");
 
     const toggleNight = () => {
         document.querySelector("body").classList.toggle("theme-light");
@@ -27,7 +27,6 @@ const Layout = ({ children, blog }) => {
     };
 
     const toggleLanguage = () => {
-        // Ajouter cette fonction pour basculer entre les langues
         setLanguage(language === "en" ? "fr" : "en");
     };
 
@@ -97,7 +96,6 @@ const Layout = ({ children, blog }) => {
                         <About />
                         <Services />
                         <Portfolio />
-                        {/* <Blog /> */}
                         <Contact />
                     </main>
                     <DayNightMood />

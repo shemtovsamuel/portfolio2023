@@ -83,8 +83,7 @@ const Portfolio = () => {
                 </div>{" "}
                 {/* Portfolio Filter */}
                 <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
-                    {/* <Link href="/area"> */}
-                    <Link href="/toto">
+                    <Link href="/area">
                         <div className="grid-item product branding fashion">
                             <div className="portfolio-box-01">
                                 <div className="portfolio-info">

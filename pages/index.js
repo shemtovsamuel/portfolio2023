@@ -33,27 +33,32 @@ const Index = () => {
                                             ].hello
                                         }
                                     </h6>
-
-                                    {/* <h1 className="font-alt">Samuel Shemtov</h1> */}
+                                    <h1 className="font-alt">Samuel Shemtov</h1>
                                     <p className="lead">
-                                        Je suis <TypingAnimation />
+                                        {
+                                            translations[
+                                                languageContext.language
+                                            ].Iam
+                                        }
+                                        <TypingAnimation />
                                     </p>
                                     <p className="desc">
-                                        En tant que développeur passionné, je
-                                        suis constamment à la recherche de
-                                        solutions innovantes pour résoudre des
-                                        problèmes complexes. Mon aptitude à
-                                        travailler en équipe et à communiquer
-                                        clairement me permet d'être un atout
-                                        précieux pour tout projet de
-                                        développement.
+                                        {
+                                            translations[
+                                                languageContext.language
+                                            ].description
+                                        }
                                     </p>
                                     <div className="btn-bar">
                                         <a
                                             className="px-btn px-btn-theme"
                                             href="#"
                                         >
-                                            Donwload CV
+                                            {
+                                                translations[
+                                                    languageContext.language
+                                                ].cv
+                                            }
                                         </a>
                                     </div>
                                 </div>
