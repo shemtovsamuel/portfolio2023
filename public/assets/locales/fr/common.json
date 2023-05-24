@@ -1,0 +1,43 @@
+{
+    "hello": "toto",
+    "description":
+      "Being a  solutions to complex problems. My ability to work in a team and communicate clearly makes me a valuable asset to any development project.",
+    "cv": "Download CV",
+    "Iam": "I am ",
+    "TypingAnimation1": "Passioech",
+    "TypingAnimation2": "Full Seloper",
+    "TypingAnimation3": "student 3rd year",
+    "aboutTitle": "About me",
+    "aboutSubTitle": "Developer inpitech 🚀",
+    "aboutDescription": "My goal as a deems and improve the user experience. I am constantly looking for new technologies and approaches to improve my programming skills and provide high-quality results for my clients and users.",
+    "aboutInfo1": "Coed",
+    "aboutInfo2": "pts",
+    "aboutInfo3": "Yexperience",
+    "aboutInfo4": "in ng",
+    "headerHome": "Home",
+    "headerAbout": "About me",
+    "headerServices": "Services",
+    "headerWork": "Portfolio",
+    "headerBlog": "Blog",
+    "headerContact": "Contact me",
+    "buttonContact": "Contact me",
+    "titleEducation": "EDUCATION & SKILLS",
+    "titleEpitech": "Expert in information technologies",
+    "epitechcompetencies": "Competencies acquired: autonomy / teamwork",
+    "bac": "Scientific Baccalaureate",
+    "bacMention": "Mention Well",
+    "skillsTitle": "My skills",
+    "skillsDescription":
+      "My experience in the company and my path at Epitech have given me a deep knowledge in programming. I am a creative, curious and quality-conscious developer.",
+    "devMobile": "Mobile developer",
+    "internship": "Internship",
+    "RTLDescription":
+      "During my internship, I developed a dashboard for managing employees allowing HR and general services to manage the company's users efficiently and ergonomically. The application was connected to the Active Directory to retrieve and store the information of the users in a database, in order to provide a comprehensive and centralized view of all the company's employees.",
+    "devFullStack": "Full Stack developer",
+    "dateRTL": "RTL AdConnect | july 2021 - december 2021",
+    "chefDeProjet": "Project Manager",
+    "dateTaker": "Taker | march 2022 - april 2023",
+    "descriptionTaker":
+      "• Prospecting : search for new clients (start-ups, large accounts...), making contacts <br />• Project management: planning, organization, agile methods, budgeting <br />• Communication: communication with customers, teamwork <br />• Technical skills: mastery of several programming languages <br />• Leadership: decision making, problem solving, team coordination",
+    "datePartTimeOP": "One point | october 2022 - april 2023"
+  }
