@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useContext } from "react";
+import React, { Fragment, useState } from "react";
 import ImageView from "../components/ImageView";
 import BackBtn from "./BackBtn";
 import DayNightMood from "./DayNightMood";
@@ -6,11 +6,6 @@ import Header from "./Header";
 import ThemeContext from "../components/ThemeContext";
 import LanguageContext from "../components/LanguageContext";
 import Translate from "./Translate";
-import dynamic from "next/dynamic";
-
-const Portfolio = dynamic(() => import("../components/Portfolio"), {
-    ssr: false,
-});
 
 const Layout = ({ children, blog }) => {
     const [night, setNight] = useState(true);
@@ -33,8 +28,8 @@ const Layout = ({ children, blog }) => {
                     <Header blog={blog} />
                     {children}
                     <DayNightMood />
-                    {blog && <BackBtn />}
                     <Translate />
+                    {blog && <BackBtn />}
                 </Fragment>
             </LanguageContext.Provider>
         </ThemeContext.Provider>

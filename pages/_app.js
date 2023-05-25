@@ -3,7 +3,6 @@ import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
-import App from "./indexbackup"; // Importez le fichier Layout
 import Layout from "../src/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
