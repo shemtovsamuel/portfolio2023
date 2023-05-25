@@ -29,8 +29,3 @@ __MACOSX/
 # Fichiers de sauvegarde
 *~
 *.bak
-
-# Fichiers générés automatiquement
-/public/static/css/
-/public/static/js/
-/public/static/media/
