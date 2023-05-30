@@ -53,24 +53,24 @@ const Portfolio = () => {
                         </li>
                         <li
                             className={`c-pointer ${activeBtn("branding")}`}
-                            onClick={handleFilterKeyChange("branding")}
-                            data-filter=".branding"
+                            onClick={handleFilterKeyChange("epitech")}
+                            data-filter=".epitech"
                         >
-                            Branding
+                            Epitech
                         </li>
                         <li
                             className={`c-pointer ${activeBtn("photoshop")}`}
-                            onClick={handleFilterKeyChange("photoshop")}
-                            data-filter=".photoshop"
+                            onClick={handleFilterKeyChange("stage")}
+                            data-filter=".stage"
                         >
-                            Photoshop
+                            Stage
                         </li>
                         <li
                             className={`c-pointer ${activeBtn("fashion")}`}
-                            onClick={handleFilterKeyChange("fashion")}
-                            data-filter=".fashion"
+                            onClick={handleFilterKeyChange("freelance")}
+                            data-filter=".freelance"
                         >
-                            Fashion
+                            Freelance
                         </li>
                         <li
                             className={`c-pointer ${activeBtn("product")}`}
@@ -81,10 +81,9 @@ const Portfolio = () => {
                         </li>
                     </ul>
                 </div>{" "}
-                {/* Portfolio Filter */}
                 <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
                     <Link href="/area">
-                        <div className="grid-item product branding fashion">
+                        <div className="grid-item epitech">
                             <div className="portfolio-box-01">
                                 <div className="portfolio-info">
                                     <h5 className="white-color font-weight-bold">
@@ -113,35 +112,38 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Link>
-                    {/* grid item */}
-                    <div className="grid-item photoshop">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/inveskal.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-2.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
+                    <Link href="/inveskal">
+                        <div className="grid-item freelance">
+                            <div className="portfolio-box-01">
+                                <div className="portfolio-info">
+                                    <h5 className="white-color font-weight-bold">
+                                        Inveskal
+                                    </h5>
+                                    <span>REACT DJANGO</span>
+                                </div>
+                                <div
+                                    className="portfolio-img"
+                                    style={{ borderRadius: "25%" }}
+                                >
+                                    <img
+                                        src="static/img/portfolio/inveskal.png"
+                                        title=""
+                                        alt=""
+                                    />
+                                    <div className="portfolio-icon">
+                                        <a
+                                            href="/inveskal"
+                                            className="gallery-link"
+                                        >
+                                            <span className="ti-plus" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>{" "}
-                    {/* grid item */}
+                    </Link>
                     <Link href="/rtype">
-                        <div className="grid-item product branding">
+                        <div className="grid-item epitech">
                             <div className="portfolio-box-01">
                                 <div className="portfolio-info">
                                     <h5 className="white-color font-weight-bold">
@@ -169,9 +171,8 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Link>
-                    {/* grid item */}
                     <Link href="/tree">
-                        <div className="grid-item product branding">
+                        <div className="grid-item stage">
                             <div className="portfolio-box-01">
                                 <div className="portfolio-info">
                                     <h5 className="white-color font-weight-bold">
@@ -197,241 +198,126 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </Link>
-                    {/* grid item */}
-                    <div className="grid-item branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/teams.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-4.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
+                    <Link href="/teams">
+                        <div className="grid-item epitech">
+                            <div className="portfolio-box-01">
+                                <div className="portfolio-info">
+                                    <h5 className="white-color font-weight-bold">
+                                        Teams
+                                    </h5>
+                                    <span>C TCP Sockets</span>
+                                </div>
+                                <div
+                                    className="portfolio-img"
+                                    style={{ borderRadius: "25%" }}
+                                >
+                                    <img
+                                        src="static/img/portfolio/teams.png"
+                                        title=""
+                                        alt=""
+                                    />
+                                    <div className="portfolio-icon">
+                                        <a
+                                            href="/teams"
+                                            className="gallery-link"
+                                        >
+                                            <span className="ti-plus" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item product photoshop">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/trading.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-6.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
+                    </Link>
+                    <Link href="/rtladconnect">
+                        <div className="grid-item stage">
+                            <div className="portfolio-box-01">
+                                <div className="portfolio-info">
+                                    <h5 className="white-color font-weight-bold">
+                                        RTL Ad Connect
+                                    </h5>
+                                    <span>Angular Spring MySQL</span>
+                                </div>
+                                <div
+                                    className="portfolio-img"
+                                    style={{ borderRadius: "25%" }}
+                                >
+                                    <img
+                                        src="static/img/portfolio/rtladconnect.png"
+                                        title=""
+                                        alt=""
+                                    />
+                                    <div className="portfolio-icon">
+                                        <a
+                                            href="/rtladconnect"
+                                            className="gallery-link"
+                                        >
+                                            <span className="ti-plus" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/automatecellulaire.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-7.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
+                    </Link>
+                    <Link href="/univers-immo">
+                        <div className="grid-item freelance">
+                            <div className="portfolio-box-01">
+                                <div className="portfolio-info">
+                                    <h5 className="white-color font-weight-bold">
+                                        UNVIVERS IMMO
+                                    </h5>
+                                    <span>HTML CSS</span>
+                                </div>
+                                <div
+                                    className="portfolio-img"
+                                    style={{ borderRadius: "25%" }}
+                                >
+                                    <img
+                                        src="static/img/portfolio/universimmo.png"
+                                        title=""
+                                        alt=""
+                                    />
+                                    <div className="portfolio-icon">
+                                        <a
+                                            href="/univers-immo"
+                                            className="gallery-link"
+                                        >
+                                            <span className="ti-plus" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item product branding">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/universimmo.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-8.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
+                    </Link>
+                    <Link href="/image-compressor">
+                        <div className="grid-item epitech">
+                            <div className="portfolio-box-01">
+                                <div className="portfolio-info">
+                                    <h5 className="white-color font-weight-bold">
+                                        Image compressor
+                                    </h5>
+                                    <span>HASKELL</span>
+                                </div>
+                                <div
+                                    className="portfolio-img"
+                                    style={{ borderRadius: "25%" }}
+                                >
+                                    <img
+                                        src="static/img/portfolio/imagecompressor.png"
+                                        title=""
+                                        alt=""
+                                    />
+                                    <div className="portfolio-icon">
+                                        <a
+                                            href="/image-compressor"
+                                            className="gallery-link"
+                                        >
+                                            <span className="ti-plus" />
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/bomberman.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-9.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/assembler.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-10.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/imagecompressor.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-11.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/maze.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-12.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{" "}
-                    {/* grid item */}
-                    <div className="grid-item fashion">
-                        <div className="portfolio-box-01">
-                            <div className="portfolio-info">
-                                <h5 className="white-color font-weight-bold">
-                                    Momb ios App
-                                </h5>
-                                <span>Broadcasting ios App</span>
-                            </div>
-                            <div className="portfolio-img">
-                                <img
-                                    src="static/img/portfolio/bistromatic.png"
-                                    title=""
-                                    alt=""
-                                />
-                                <div className="portfolio-icon">
-                                    <a
-                                        href="static/img/m-portfolio-12.jpg"
-                                        className="gallery-link"
-                                    >
-                                        <span className="ti-plus" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>{" "}
-                    {/* grid item */}
+                    </Link>
                 </div>
             </div>
         </section>
