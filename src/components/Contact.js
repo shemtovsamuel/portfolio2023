@@ -29,16 +29,13 @@ const Contact = () => {
             setError(true);
             clearError();
         } else {
-            const mailDataWithRecipient = {
-                ...mailData,
-                to_email: "shemtovsamuel@gmail.com",
-            };
             emailjs
-                .send(
-                    "service_lekhkrd", // service id
-                    "template_2xu5f9p", // template id
-                    mailDataWithRecipient,
-                    process.env.REACT_APP_EMAILJS_API_KEY // public api
+                .sendForm(
+                    "service_uld9ylb", // service id
+                    // "template_vnxpr47", // template id
+                    "template_vyck1ue", // template id
+                    e.target, // this is the form element
+                    "n5PFlBN7YB4nXJbqw" // user id
                 )
                 .then(
                     (response) => {

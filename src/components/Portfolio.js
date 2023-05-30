@@ -72,13 +72,6 @@ const Portfolio = () => {
                         >
                             Freelance
                         </li>
-                        <li
-                            className={`c-pointer ${activeBtn("product")}`}
-                            onClick={handleFilterKeyChange("product")}
-                            data-filter=".product"
-                        >
-                            Product
-                        </li>
                     </ul>
                 </div>{" "}
                 <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
